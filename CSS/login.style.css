@@ -1,0 +1,512 @@
+html, body
+{
+    margin: 0;
+    padding: 0px;
+}
+body
+{
+    font-family: Microsoft YaHei,SimHei,Arial;
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+a
+{
+    color: #888;
+}
+#head
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-left: 5%;
+    height: 40px;
+    line-height: 40px;
+    color: #888;
+    font-size: 14px;
+    background-color: #fbfbfb;
+    -webkit-box-shadow: 0px 1px 1px #dbdbdb;
+    box-shadow: 0px 1px 1px #dbdbdb;
+    -moz-box-shadow: 0px 1px 1px #dbdbdb;
+    z-index: 12;
+}
+#head ul
+{
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    position: absolute;
+}
+#head ul li
+{
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+#head ul li ul
+{
+    display: none;
+    overflow: hidden;
+}
+#head ul li a
+{
+    color: #888;
+    text-decoration: none;
+}
+#head ul li a:hover
+{
+    color: #007bbb;
+}
+#head ul li:hover ul
+{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 61px;
+    box-shadow: 1px 1px 2px #dbdbdb;
+    -webkit-box-shadow: 1px 1px 2px #dbdbdb;
+    -moz-box-shadow: 1px 1px 2px #dbdbdb;
+}
+#head ul li:hover a.hide
+{
+    color: #888;
+}
+#head ul li:hover ul li
+{
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e1e1e1;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #fbfbfb;
+}
+#head ul li:hover ul li a
+{
+    display: block;
+    color: #888;
+    width: 80px;
+    text-align: center;
+}
+#head ul li:hover ul li a:hover
+{
+    color: #007bbb;
+}
+.tri
+{
+    border-style: solid dashed dashed dotted;
+    border-width: 5px;
+    border-color: #888 transparent transparent transparent;
+    margin-top: 17px;
+    margin-left: 4px;
+    float: right;
+}
+#logo
+{
+    display: block;
+    float: left;
+    margin-top: 5px;
+    border: 0px;
+}
+#sdc
+{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 600px;
+    height: 350px;
+    background-color: #ccc;
+    border: 4px solid #fff;
+    overflow: hidden;
+    box-shadow: 3px 4px 5px #999;
+}
+#sdc ul
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 3000px;
+    height: 100%;
+    overflow: hidden;
+}
+#sdc ul li
+{
+    margin: 0px;
+    padding: 0px;
+    width: 600px;
+    height: 350px;
+    float: left;
+}
+.point
+{
+    margin: 4px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+    float: left;
+}
+.true
+{
+    background-color: #f3f3f3;
+}
+#wrap
+{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    height: 400px;
+    width: 1000px;
+    margin-left: -500px;
+}
+#l_c
+{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: 0px;
+    top: 20px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-image: url(images/login/logbg.png);
+    background-color: #f8f8f8;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-shadow: 2px 12px 2px #dbdbdb;
+}
+#l_c h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    color: #5AB2DF;
+    margin: 15px 0 15px 0;
+    letter-spacing: 4px;
+    position: relative;
+}
+#l_c h1:after, h1:before
+{
+    background-color: #1ba1e2;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 120px;
+}
+#l_c h1:after
+{
+    background-image: -webkit-gradient(linear,left top,right top,from(#1ba1e2),to(#fff));
+    background-image: -webkit-linear-gradient(left,#1ba1e2,#fff);
+    background-image: -moz-linear-gradient(left,#1ba1e2,#fff);
+    background-image: -ms-linear-gradient(left,#1ba1e2,#fff);
+    background-image: -o-linear-gradient(left,#1ba1e2,#fff);
+    background-image: linear-gradient(left,#1ba1e2,#fff);
+    right: 0;
+}
+#l_c h1:before
+{
+    background-image: -webkit-gradient(linear,right top,left top,from(#1ba1e2),to(#fff));
+    background-image: -webkit-linear-gradient(right,#1ba1e2,#fff);
+    background-image: -moz-linear-gradient(right,#1ba1e2,#fff);
+    background-image: -ms-linear-gradient(right,#1ba1e2,#fff);
+    background-image: -o-linear-gradient(right,#1ba1e2,#fff);
+    background-image: linear-gradient(right,#1ba1e2,#fff);
+    left: 0;
+}
+#l_c p
+{
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    width: 80%;
+    padding-left: 15%;
+    position: relative;
+    top: 0px;
+    font-size: 15px;
+    color: #666;
+    margin: 2px 0px 0px 0px;
+}
+#l_c p input[type="text"]
+{
+    border: 1px solid #ccc;
+    outline-color: #1ba1e2;
+    height: 26px;
+    width: 90%;
+    border-radius: 2px;
+}
+#l_c p input[type="password"]
+{
+    border: 1px solid #ccc;
+    outline-color: #1ba1e2;
+    height: 26px;
+    width: 90%;
+    border-radius: 2px;
+}
+#l_c p select
+{
+    border: 1px solid #ccc;
+    outline-color: #1ba1e2;
+    height: 26px;
+    width: 90%;
+    border-radius: 2px;
+}
+#l_c p select option
+{
+    height: 28px;
+}
+.l_c1
+{
+    position: absolute;
+    left: -1px;
+    bottom: -8px;
+    width: 350px;
+    height: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+.l_b
+{
+    padding: 8px 50px 8px 50px;
+    border-radius: 3px;
+    line-height: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #1ba1e2;
+    backgound-image: -webkit-gradient(linear,from(#1ba1e2),to(#007bbb));
+    background-image: -webkit-linear-gradient(top,#1ba1e2,#007bbb);
+    background-image: -moz-linear-gradient(top,#1ba1e2,#007bbb);
+    background-image: -ms-linear-gradient(top,#1ba1e2,#007bbb);
+    background-image: -o-linear-gradient(top,#1ba1e2,#007bbb);
+    background-image: linear-gradient(top,#1ba1e2,#007bbb);
+    -moz-transition: background 0.2s ease-in 0s;
+    -webkit-transition: background 0.2s ease-in 0s;
+    -ms-transition: background 0.2s ease-in 0s;
+    transition: background 0.2s ease-in 0s;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+.l_b:hover
+{
+    backgound-image: -webkit-gradient(linear,from(#8ec2f5),to(#007bbb));
+    background-image: -webkit-linear-gradient(top,#8ec2f5,#007bbb);
+    background-image: -moz-linear-gradient(top,#8ec2f5,#007bbb);
+    background-image: -ms-linear-gradient(top,#8ec2f5,#007bbb);
+    background-image: -o-linear-gradient(top,#8ec2f5,#007bbb);
+    background-image: linear-gradient(top,#8ec2f5,#007bbb);
+}
+#foot
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    height: 60px;
+    line-height: 30px;
+    text-align: center;
+    color: #555;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #dbdbdb;
+    border-top: 1px solid #ccc;
+}
+#foot a
+{
+    color: #444;
+    text-decoration: none;
+}
+#foot a:hover
+{
+    color: #222;
+    text-decoration: underline;
+}
+#ie_update
+{
+    position: fixed;
+    top: 0px;
+    margin-left: -400px;
+    left: 50%;
+    width: 800px;
+    height: 250px;
+    z-index: 1000;
+    display: none;
+    background-image: url('./images/login/updatebroswer.png');
+    font-size: 16px;
+    color: #666;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 2px 2px 3px #dbdbdb;
+}
+#ie_update a
+{
+    color: #000;
+    text-decoration: none;
+}
+#ie_update a image
+{
+    border: 0px;
+}
+#ie_update a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+/*popupbox style*/.pbox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -180px;
+    width: 640px;
+    height: 360px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    display: none;
+}
+.p_h
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    padding-left: 10%;
+    border-bottom: 1px solid #e8e8e8;
+    height: 50px;
+    line-height: 50px;
+    color: #444;
+    text-shadow: 1px 1px 2px #eee;
+}
+.p_close
+{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/sys.png");
+}
+.p_close:hover
+{
+    background-image: url("images/sys.png");
+    background-position: -20px 0px;
+}
+.p_c
+{
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    border-top: 1px solid #fff;
+    height: 306px;
+    width: 100%;
+    overflow: hidden;
+}
+.p_c a
+{
+    color: #333;
+    text-decoration: none;
+}
+.p_c table
+{
+    margin: 0px auto;
+}
+.p_c table tr td
+{
+    background-color: #FFF;
+}
+.p_c a:hover
+{
+    color: #333;
+    text-decoration: underline;
+}
+#pbg
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    opacity: 0.7;
+    display: none;
+}
+.focus
+{
+    width: 800px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.focus ul
+{
+    height: 380px;
+    position: absolute;
+}
+.focus ul li
+{
+    float: left;
+    width: 800px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+.focus ul li div
+{
+    position: absolute;
+    overflow: hidden;
+}
+.focus .btnBg
+{
+    position: absolute;
+    width: 800px;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    display: none;
+}
+.focus .btn
+{
+    position: absolute;
+    width: 780px;
+    height: 23px;
+    padding: 0px 10px 0px 10px;
+    right: 0;
+    bottom: 6px;
+    text-align: right;
+}
+#sdc .btn span
+{
+    display: inline-block;
+    _display: inline;
+    _zoom: 1;
+    width: 25px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    _font-size: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+#sdc .btn span.on
+{
+    background: #000;
+}
